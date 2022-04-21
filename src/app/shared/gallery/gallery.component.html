@@ -1,0 +1,14 @@
+
+
+<section class="galeria">
+    <div class="gallery">
+        <figure *ngFor="let dios of dioses"  >
+            <h2>{{dios.name}}</h2>
+            <img src="{{dios.image}}" alt=/>
+           <a [routerLink]="['/dios', dios.id]">
+               More about..</a>
+          
+        </figure>
+        </div>
+    </section>
+    

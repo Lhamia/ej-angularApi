@@ -1,0 +1,31 @@
+nav{
+ height: 5vh;
+ background-color: rgb(225, 210, 182);
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 8vh;
+      
+
+        
+        
+        li a{
+            color: black;
+            margin:20vh;
+         
+
+
+
+            &:hover{
+                color: rgb(79, 73, 79);
+               font-size: large;
+            }
+        }
+ 
+   }
+
+   
+}

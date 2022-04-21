@@ -1,0 +1,29 @@
+<div class="contenedor">
+<form class="formulario" (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+  <p>Nombre de la nueva deidad</p>
+  <input type="text" id="name" formControlName="name" />
+  <span
+    *ngIf="
+      contactForm.controls['name'].errors &&
+      contactForm.controls['name'].errors['required']
+    "
+    >requerido</span
+  >
+
+  <p>Descripción</p>
+  <input type="text" formControlName="description" />
+  <span *ngIf="contactForm.controls['description'].errors && ['required']"
+    >requerido</span
+  >
+  <div>
+    <label for="image"> Subir imagen</label>
+  </div> 
+  <input class="input"
+  formControlName="image"
+  id="img"
+  name="image"
+  type="text"/>
+
+  <button class="btn">Enviar</button>
+</form>
+</div>
